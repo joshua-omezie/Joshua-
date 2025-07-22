@@ -1,480 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JB's International Restaurant</title>
- 
-<style>
-  body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #fffaf0;
-  color: #333;
-}
+  <meta charset="UTF-8">
+  <title>JB’s International Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #faf5ef;
+      color: #2f3e46;
+    }
 
-header h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-  }
-  nav {
-    background-color: #d2691e; /* spicy orange-brown */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 10px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: #a0522d; /* cinnamon brown */
-    transition: background 0.3s;
-  }
-  nav a:hover {
-    background-color: #ffcc00; /* butter yellow */
-    color: #000;
-  }
-  .search-bar {
-    text-align: center;
-    margin: 20px;
-  }
-  .search-bar input {
-    padding: 10px;
-    width: 60%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-  }
-  .card {
-    background-color: #fff8dc;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
-  .card:hover {
-    transform: scale(1.02);
-  }
-  .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  .card-content {
-    padding: 15px;
-  }
-  .card-content h3 {
-    margin-top: 0;
-    color: #8b0000; /* dark tomato red */
-  }
-  .price {
-    color: #b22222; /* firebrick red */
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  section#about, section#contact {
-    padding: 40px 20px;
-    background-color: #fff8dc;
-    text-align: center;
-  }
-  footer {
-    background-color: #8B4513;
-    color: #fff8dc;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-  }
-</style>
+    header {
+      background-color: #2f3e46;
+      color: #fdfcfb;
+      padding: 60px 20px;
+      text-align: center;
+    }
 
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .nav-links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .nav-links a {
+      background-color: #52796f;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #354f52;
+    }
+
+    footer {
+      background-color: #2f3e46;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+
+    @media (min-width: 600px) {
+      .nav-links {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>JB's International Restaurant</h1>
-    <p>Serving global tastes on one table</p>
+    <h1>JB’s International Restaurant</h1>
+    <p>World-class meals served with local pride</p>
   </header>
 
-<nav>
-  <a href="#chinese">🥡 Chinese</a>
-  <a href="#yoruba">🍲 Yoruba</a>
-  <a href="#igbo">🍛 Igbo</a>
-  <a href="#seafood">🦐 Seafood</a>
-  <a href="#european">🍝 European</a>
-  <a href="about.html">ℹ️ About</a>
-  <a href="contact.html">📞 Contact</a>
-  <a href="complaint.html">✉️ Complaint</a>
-</nav>
+  <main>
+    <h2>Select a Menu</h2>
+    <div class="nav-links">
+      <a href="chinese.html">🥡 Chinese Cuisine</a>
+      <a href="yoruba.html">🍲 Yoruba Dishes</a>
+      <a href="igbo.html">🍛 Igbo Traditional</a>
+      <a href="seafood.html">🦐 Fresh Seafood</a>
+      <a href="european.html">🍝 European Delights</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="contact.html">📞 Contact Us</a>
+      <a href="complaint.html">📝 Submit Complaint</a>
+    </div>
+  </main>
 
-  <section>
-    <h2>Welcome to JB’s!</h2>
-    <p>Choose a cuisine above to view full details.</p>
-  </section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chinese Food - JB's Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .price {
-      color: #cc0000;
-      font-weight: bold;
-      font-size: 1.3em;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>🥡 Chinese - Noodles</h1>
-  <img src="chinese.jpg" alt="Chinese Noodles">
-  <p class="price">₦5,500</p>
-  <p>Classic noodles with vegetables and soy sauce.</p>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yoruba Food - JB's Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .price {
-      color: #cc0000;
-      font-weight: bold;
-      font-size: 1.3em;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>🍲 Yoruba - Amala & Ewedu</h1>
-  <img src="yoruba.jpg" alt="Yoruba Food">
-  <p class="price">₦2,800</p>
-  <p>Served with gbegiri, ewedu, and assorted meat.</p>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Igbo Food - JB's Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .price {
-      color: #cc0000;
-      font-weight: bold;
-      font-size: 1.3em;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>🍛 Igbo - Ofe Nsala</h1>
-  <img src="igbo.jpg" alt="Igbo Food">
-  <p class="price">₦2,200</p>
-  <p>White soup made with catfish and yam. Igbo special!</p>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seafood - JB's Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .price {
-      color: #cc0000;
-      font-weight: bold;
-      font-size: 1.3em;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>🦐 Seafood - Grilled Prawns</h1>
-  <img src="seafood.jpg" alt="Seafood">
-  <p class="price">₦3,000</p>
-  <p>Spicy grilled prawns served with lemon butter sauce.</p>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>European Food - JB's Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-    .price {
-      color: #cc0000;
-      font-weight: bold;
-      font-size: 1.3em;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>🍝 European - Spaghetti Bolognese</h1>
-  <img src="european.jpg" alt="European Food">
-  <p class="price">₦4,700</p>
-  <p>Italian pasta with meaty tomato sauce and parmesan.</p>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Us - JB’s Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      padding: 40px;
-      text-align: center;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>ℹ️ About JB’s International Restaurant</h1>
-  <p>JB’s International Restaurant brings together flavors from Africa, Asia, and Europe — all under one roof. Our chefs specialize in preparing authentic, high-quality meals using fresh ingredients.</p>
-  <p>Whether you’re craving local Nigerian dishes or global cuisine, you’ll find something delicious here.</p>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Us - JB’s Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      padding: 40px;
-      text-align: center;
-    }
-    .contact-info {
-      font-size: 1.2em;
-      margin: 20px 0;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>📞 Contact Us</h1>
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:joshuaomezie6@gmail.com">joshuaomezie6@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+2349030055159">+234 903 005 5159</a></p>
-    <p><strong>Location:</strong> 123 Global Street, Lagos, Nigeria</p>
-  </div>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Us - JB’s Restaurant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      padding: 40px;
-      text-align: center;
-    }
-    .contact-info {
-      font-size: 1.2em;
-      margin: 20px 0;
-    }
-    form {
-      margin-top: 30px;
-      display: inline-block;
-      text-align: left;
-      width: 100%;
-      max-width: 500px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-    button {
-      background-color: #222;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #444;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 30px;
-      text-decoration: none;
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>📞 Contact Us</h1>
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:joshuaomezie6@gmail.com">joshuaomezie6@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+2349030055159">+234 903 005 5159</a></p>
-    <p><strong>Location:</strong> 123 Global Street, Lagos, Nigeria</p>
-  </div>
-
-  <h2>📝 Make a Complaint</h2>
-  <form onsubmit="handleSubmit(event)">
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="message">Complaint / Feedback:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Submit Complaint</button>
-  </form>
-
-  <a href="index.html" class="back">⬅ Back to Home</a>
-
-  <script>
-    function handleSubmit(event) {
-      event.preventDefault();
-      alert("Thank you for your complaint. We will review it shortly.");
-      event.target.reset(); // clear form
-    }
-  </script>
-
-</body>
-</html>
+  <footer>
+    &copy; 2025 JB’s International Restaurant | Designed with care
+  </footer>
 
 </body>
 </html>
